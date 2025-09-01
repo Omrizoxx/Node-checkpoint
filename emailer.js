@@ -4,14 +4,14 @@ const nodemailer = require('nodemailer');
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user:  'omaradan091@gmail.com',
+        user:  'mahmoudbomton@gmail.com',
         pass:  'ddal fyew kpvy liky',
     },
 });
 
 const mailOptions = {
-    from: 'omaradan091@gmail.com',
-    to: 'mahrezbomton@gmail.com',
+    from: 'mahmoudbomton@gmail.com',
+    to: 'mahrez912@gmail.com',
     subject: 'Test Email',
     text: 'Hello Mahrez Bomton this is a reminder for your next appointment on 2nd of September 2025 at 10:00 AM. please confirm your attendance.',
 };
