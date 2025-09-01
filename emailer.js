@@ -4,8 +4,8 @@ const nodemailer = require('nodemailer');
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: process.env.GMAIL_USER || 'omaradan091@gmail.com',
-        pass: process.env.GMAIL_APP_PASSWORD || 'ddal fyew kpvy liky',
+        user:  'omaradan091@gmail.com',
+        pass:  'ddal fyew kpvy liky',
     },
 });
 
@@ -13,7 +13,7 @@ const mailOptions = {
     from: 'omaradan091@gmail.com',
     to: 'mahrezbomton@gmail.com',
     subject: 'Test Email',
-    text: 'This is a test email',
+    text: 'Hello Mahrez Bomton this is a reminder for your next appointment on 2nd of September 2025 at 10:00 AM. please confirm your attendance.',
 };
 
 transporter.sendMail(mailOptions, (error, info) => {
